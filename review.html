@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Reviews | Martial Arts Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+
+    .reviews-page {
+      padding: 40px 20px 60px;
+    }
+
+    .reviews-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .back-row {
+      margin-bottom: 24px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #111;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      transition: 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #333;
+    }
+
+    .reviews-hero {
+      background: linear-gradient(135deg, #111, #2b2b2b);
+      color: #fff;
+      border-radius: 20px;
+      padding: 40px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    .reviews-hero h1 {
+      margin: 0 0 12px;
+      font-size: 42px;
+    }
+
+    .reviews-hero p {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 800px;
+      color: #e4e4e4;
+    }
+
+    .social-box {
+      background: #fff;
+      border-radius: 18px;
+      padding: 25px;
+      margin-bottom: 30px;
+      border: 1px solid #e4e4e4;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .social-box h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 28px;
+    }
+
+    .social-box p {
+      margin-bottom: 18px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 700;
+      border: 1px solid #111;
+      color: #111;
+      background: #fff;
+      transition: 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    .reviews-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .reviews-topbar h2 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .review-count {
+      background: #111;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px;
+      border: 1px solid #e5e5e5;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .review-stars {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .review-text {
+      line-height: 1.8;
+      color: #444;
+      margin: 0;
+    }
+
+    .review-author {
+      margin-top: auto;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .review-role {
+      font-size: 14px;
+      color: #777;
+      margin-top: -6px;
+    }
+
+    @media (max-width: 992px) {
+      .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .reviews-hero h1 {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reviews-hero {
+        padding: 28px 20px;
+      }
+
+      .reviews-hero h1 {
+        font-size: 28px;
+      }
+
+      .social-links {
+        flex-direction: column;
+      }
+
+      .social-links a {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="reviews-page">
+    <div class="reviews-container">
+
+      <div class="back-row">
+        <a href="javascript:history.back()" class="back-btn">← Back</a>
+      </div>
+
+      <section class="reviews-hero">
+        <h1>Member Reviews</h1>
+        <p>
+          These reviews show feedback from academy members and visitors. I added this page
+          to make the website more engaging and to support the social and community side of
+          the Martial Arts Academy website.
+        </p>
+      </section>
+
+      <section class="social-box">
+        <h2>Follow Us on Social Media</h2>
+        <p>
+          Stay connected with Martial Arts Academy through our social media pages for class
+          updates, training clips, member achievements, event highlights and academy news.
+        </p>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+          <a href="https://x.com/" target="_blank">X</a>
+        </div>
+      </section>
+
+      <div class="reviews-topbar">
+        <h2>What Our Members Say</h2>
+        <div class="review-count">20 Reviews</div>
+      </div>
+
+      <section class="reviews-grid">
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The academy has a very professional environment. The coaches are supportive and the classes are well organised. I improved my fitness and confidence a lot.</p>
+          <div class="review-author">Aarav Khan</div>
+          <div class="review-role">Adult Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">I joined as a beginner and felt comfortable from the first week. The trainers explain techniques clearly and make every session engaging.</p>
+          <div class="review-author">Maya Patel</div>
+          <div class="review-role">Karate Student</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">The timetable is flexible and the facilities are clean. I especially like the mix of martial arts and fitness training in one place.</p>
+          <div class="review-author">Omar Raza</div>
+          <div class="review-role">Fitness Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">My son attends the kids classes and he enjoys them every week. The environment feels safe, structured and encouraging.</p>
+          <div class="review-author">Nadia Hassan</div>
+          <div class="review-role">Parent</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The Muay Thai sessions are intense and motivating. I can see a big difference in my stamina and technique since joining.</p>
+          <div class="review-author">Bilal Ahmed</div>
+          <div class="review-role">Muay Thai Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">I like the friendly atmosphere and the instructors are approachable. It is a good place for both beginners and more experienced students.</p>
+          <div class="review-author">Sana Mirza</div>
+          <div class="review-role">Judo Student</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The private tuition sessions helped me improve faster. The feedback was detailed and very useful for my progress.</p>
+          <div class="review-author">Daniel Brooks</div>
+          <div class="review-role">Private Tuition Student</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">I joined for self-defence and ended up continuing with regular training. The classes are practical and confidence-building.</p>
+          <div class="review-author">Hina Shah</div>
+          <div class="review-role">Self-Defence Course Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">The website is easy to use and the membership information is clear. Booking and finding details is much simpler now.</p>
+          <div class="review-author">Ramesh Thapa</div>
+          <div class="review-role">Website Visitor</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The academy has excellent energy. You feel motivated as soon as you walk in and the coaching quality is strong across different classes.</p>
+          <div class="review-author">Lucy Morgan</div>
+          <div class="review-role">Regular Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The strength and conditioning support is one of my favourite parts. It really helped me balance martial arts training with overall fitness.</p>
+          <div class="review-author">Imran Yousaf</div>
+          <div class="review-role">Combat Fitness Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">The changing rooms and gym space are clean and practical. It feels like a serious and well-managed training academy.</p>
+          <div class="review-author">Sara Lewis</div>
+          <div class="review-role">New Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">I appreciate how the coaches give attention to technique and not just speed. That made the training more effective for me.</p>
+          <div class="review-author">Tariq Mahmood</div>
+          <div class="review-role">Jiu-Jitsu Student</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">My daughter has become much more disciplined and confident after attending the junior sessions. I would definitely recommend the academy.</p>
+          <div class="review-author">Farah Ali</div>
+          <div class="review-role">Parent</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">The pricing options are reasonable and there is a good balance between beginner classes, advanced classes and personal coaching.</p>
+          <div class="review-author">Yusuf Khan</div>
+          <div class="review-role">Adult Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The instructors create a respectful atmosphere where everyone can improve. It feels welcoming without losing professionalism.</p>
+          <div class="review-author">Emma Clarke</div>
+          <div class="review-role">Karate Member</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">The beginner self-defence course was one of the most useful courses I have taken. The sessions were practical and easy to follow.</p>
+          <div class="review-author">Priya Nair</div>
+          <div class="review-role">Course Participant</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★☆</div>
+          <p class="review-text">I like that the academy offers more than just martial arts. The fitness room and coaching support add real value.</p>
+          <div class="review-author">Adam Rehman</div>
+          <div class="review-role">Fitness Room User</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">This is a good academy for people who want structured learning. The website also gives enough information before joining.</p>
+          <div class="review-author">Noor Siddiqui</div>
+          <div class="review-role">Website Visitor</div>
+        </article>
+
+        <article class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">From coaching quality to class variety, everything feels well planned. I would recommend Martial Arts Academy to anyone serious about training.</p>
+          <div class="review-author">James Walker</div>
+          <div class="review-role">Elite Member</div>
+        </article>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

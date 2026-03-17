@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Martial Arts Academy</title>
+
+  <!-- Main site stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Small page styles (works even if style.css is simple) -->
+  <style>
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    .skip-link {
+      position: absolute; left: -999px; top: 10px;
+      background: #000; color: #fff; padding: 10px 14px; border-radius: 8px;
+      z-index: 9999;
+    }
+    .skip-link:focus { left: 10px; }
+
+    .about-hero { padding: 56px 0 24px; }
+    .about-hero h1 { margin: 0 0 10px; font-size: clamp(26px, 3vw, 40px); }
+    .about-hero p { margin: 0 0 14px; line-height: 1.7; max-width: 820px; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+    .badge {
+      padding: 8px 12px; border-radius: 999px; font-size: 14px;
+      border: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .about-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 18px; margin: 18px 0 40px; }
+    .card {
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .card h2 { margin: 0 0 10px; font-size: 20px; }
+    .card p { margin: 0 0 10px; line-height: 1.7; }
+    .card ul { margin: 0; padding-left: 18px; line-height: 1.8; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 0 0 40px; }
+    .mini-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .mini {
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .mini h3 { margin: 0 0 6px; font-size: 16px; }
+    .mini p { margin: 0; line-height: 1.6; font-size: 14px; }
+
+    .cta {
+      border-radius: 16px;
+      padding: 22px;
+      border: 1px solid rgba(0,0,0,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 0 0 50px;
+    }
+    .cta h2 { margin: 0 0 6px; }
+    .cta p { margin: 0; line-height: 1.6; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid rgba(0,0,0,0.25);
+    }
+    .btn-primary { background: #111; color: #fff; }
+    .btn-outline { background: transparent; color: inherit; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .mini-grid { grid-template-columns: 1fr; }
+      .cta { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">Martial Arts Academy</a>
+
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="timetable.html" class="nav-link">Timetable</a>
+      <a href="memberships.html" class="nav-link">Memberships</a>
+      <a href="trainers.html" class="nav-link">Trainers</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="nav-link">Login</a>
+    </nav>
+  </div>
+</header>
+  <!-- ================= END HEADER ================= -->
+
+
+  <!-- ================= ABOUT PAGE CONTENT ================= -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="about-hero">
+      <div class="container">
+        <h1>About Martial Arts Academy</h1>
+        <p>
+          I created this website for Martial Arts Academy to clearly show what the gym offers and
+          to help members find information easily. The academy is a modern training centre that
+          focuses on discipline, confidence, and real fitness.
+        </p>
+
+        <div class="badge-row" aria-label="Key values">
+          <span class="badge">Discipline</span>
+          <span class="badge">Confidence</span>
+          <span class="badge">Fitness</span>
+          <span class="badge">All Levels Welcome</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO GRID -->
+    <section>
+      <div class="container about-grid">
+
+        <article class="card">
+          <h2>Who we are</h2>
+          <p>
+            Martial Arts Academy is a martial arts gym that provides structured training for beginners,
+            intermediate learners, and advanced students. The goal is simple: I want members to learn
+            proper technique, stay safe, and improve step-by-step.
+          </p>
+          <p>
+            We teach multiple martial arts styles and also support people who want self-defence skills
+            or fitness training. So, even if someone is not planning to compete, they still get huge value
+            from training here.
+          </p>
+        </article>
+
+        <aside class="card" aria-label="Quick summary">
+          <h2>What you can do here</h2>
+          <ul>
+            <li>Train in Jiu-Jitsu, Karate, Judo, and Muay Thai</li>
+            <li>Join kids classes and junior memberships</li>
+            <li>Take private tuition (hourly)</li>
+            <li>Use fitness room and personal training</li>
+            <li>Join beginner self-defence course</li>
+          </ul>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- WHAT WE TEACH + FACILITIES -->
+    <section>
+      <div class="container two-col">
+
+        <article class="card">
+          <h2>What we teach</h2>
+          <p>
+            The academy offers several martial arts. Each style has a different focus, so members can choose
+            what fits their goals. For example, some people train for strength and cardio, while others want
+            grappling skills or self-defence confidence.
+          </p>
+          <ul>
+            <li><strong>Jiu-Jitsu:</strong> Ground control, submissions, and smart technique.</li>
+            <li><strong>Judo:</strong> Throws, balance, and powerful takedowns.</li>
+            <li><strong>Karate:</strong> Striking, discipline, and strong fundamentals.</li>
+            <li><strong>Muay Thai:</strong> High-energy striking using punches, kicks, elbows, and knees.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Facilities</h2>
+          <p>
+            The training environment matters a lot, so the academy provides good facilities that support safe
+            and comfortable training.
+          </p>
+          <ul>
+            <li>Large matted martial arts training area</li>
+            <li>Fully equipped fitness gym</li>
+            <li>Sauna and steam room</li>
+            <li>Changing rooms and shower facilities</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section>
+      <div class="container">
+        <div class="card">
+          <h2>Why people choose us</h2>
+
+          <div class="mini-grid" role="list">
+            <div class="mini" role="listitem">
+              <h3>Friendly coaching</h3>
+              <p>
+                I focus on clear instructions and support, so beginners do not feel lost.
+              </p>
+            </div>
+
+            <div class="mini" role="listitem">
+              <h3>Safe training</h3>
+              <p>
+                Good technique and safety rules matter, so injuries are reduced.
+              </p>
+            </div>
+
+            <div class="mini" role="listitem">
+              <h3>Real progress</h3>
+              <p>
+                Members improve fitness, discipline, and confidence with consistent practice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="container">
+        <div class="cta" aria-label="Call to action">
+          <div>
+            <h2>Ready to start training?</h2>
+            <p>
+              Check the class options and timetable, then choose a membership that matches your goal.
+            </p>
+          </div>
+          <div>
+            <a class="btn btn-primary" href="classes.html">View Classes</a>
+            <a class="btn btn-outline" href="timetable.html">View Timetable</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- ================= END ABOUT PAGE CONTENT ================= -->
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+
+    <!-- Footer main content -->
+    <div class="container footer-grid">
+
+      <!-- Academy description -->
+      <div>
+        <h3 class="footer-title">Martial Arts Academy</h3>
+        <p class="footer-text">
+          This website helps members explore classes, timetables,
+          and membership plans easily.
+        </p>
+        <p class="footer-text">
+          Discipline • Confidence • Fitness
+        </p>
+      </div>
+
+      <!-- Quick navigation links -->
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <a href="classes.html" class="footer-link">Classes</a><br />
+        <a href="timetable.html" class="footer-link">Timetable</a><br />
+        <a href="memberships.html" class="footer-link">Memberships</a><br />
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+
+      <!-- Reviews section -->
+      <!-- Later reviews will be loaded from database -->
+      <div>
+        <h4 class="footer-heading">Reviews</h4>
+        <p class="footer-text">⭐ 4.8 / 5 average rating</p>
+        <a href="review.html" class="footer-link">Read Reviews</a><br />
+        <a href="review.html#leave-review" class="footer-link">Leave a Review</a>
+      </div>
+
+    </div>
+
+    <!-- Bottom copyright line -->
+    <div class="container footer-bottom">
+      <p class="footer-text">
+        © 2026 Martial Arts Academy. All rights reserved.
+      </p>
+    </div>
+
+  </footer>
+  <!-- ================= END FOOTER ================= -->
+
+  <script src="script.js"></script>
+</body>
+</html>

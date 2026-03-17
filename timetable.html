@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timetable | Martial Arts Academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">Martial Arts Academy</a>
+
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="classes.html" class="nav-link">Classes</a>
+      <a href="timetable.html" class="nav-link">Timetable</a>
+      <a href="memberships.html" class="nav-link">Memberships</a>
+      <a href="trainers.html" class="nav-link">Trainers</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="login.html" class="nav-link">Login</a>
+    </nav>
+  </div>
+</header>
+  <!-- ================= END HEADER ================= -->
+
+  <!-- ================= MAIN ================= -->
+  <main id="main" class="page">
+    <div class="container">
+      <header class="page-head">
+        <h1 class="page-title">Class Timetable</h1>
+        <p class="page-subtitle">
+          This timetable shows our weekly sessions, including kids classes, open mat practice, and private tuition.
+          For membership options and prices, visit <a href="memberships.html" class="text-link">Memberships</a>.
+        </p>
+      </header>
+
+      <!-- Controls (professional touch) -->
+      <section class="panel" aria-label="Timetable tools">
+        <div class="panel-row">
+          <div>
+            <label for="classFilter" class="label">Filter by class</label>
+            <select id="classFilter" class="select">
+              <option value="all">Show all</option>
+              <option value="Jiu-jitsu">Jiu-jitsu</option>
+              <option value="Karate">Karate</option>
+              <option value="Judo">Judo</option>
+              <option value="Muay Thai">Muay Thai</option>
+              <option value="Private tuition">Private tuition</option>
+              <option value="Open mat / personal practice">Open mat / personal practice</option>
+              <option value="Kids">Kids classes</option>
+            </select>
+            <p class="help-text">Tip: choose a class to highlight it in the timetable.</p>
+          </div>
+
+          <div class="legend" aria-label="Legend">
+            <span class="badge">Kids</span>
+            <span class="badge">Private tuition</span>
+            <span class="badge">Open mat</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timetable Table -->
+      <section class="table-card" aria-label="Weekly timetable table">
+        <div class="table-scroll">
+          <table class="timetable" aria-describedby="timetableNote">
+            <thead>
+              <tr>
+                <th scope="col" class="sticky-col">Time</th>
+                <th scope="col">Monday</th>
+                <th scope="col">Tuesday</th>
+                <th scope="col">Wednesday</th>
+                <th scope="col">Thursday</th>
+                <th scope="col">Friday</th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <!-- 06:00–07:30 -->
+              <tr>
+                <th scope="row" class="sticky-col">06:00–07:30</th>
+                <td class="slot" data-class="Jiu-jitsu">Jiu-jitsu</td>
+                <td class="slot" data-class="Karate">Karate</td>
+                <td class="slot" data-class="Judo">Judo</td>
+                <td class="slot" data-class="Jiu-jitsu">Jiu-jitsu</td>
+                <td class="slot" data-class="Muay Thai">Muay Thai</td>
+                <td class="slot is-empty" data-class="Empty">—</td>
+                <td class="slot is-empty" data-class="Empty">—</td>
+              </tr>
+
+              <!-- 08:00–10:00 -->
+              <tr>
+                <th scope="row" class="sticky-col">08:00–10:00</th>
+                <td class="slot" data-class="Muay Thai">Muay Thai</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Jiu-jitsu">Jiu-jitsu</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+              </tr>
+
+              <!-- 10:30–12:00 -->
+              <tr>
+                <th scope="row" class="sticky-col">10:30–12:00</th>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot" data-class="Judo">Judo</td>
+                <td class="slot" data-class="Karate">Karate</td>
+              </tr>
+
+              <!-- 13:00–14:30 -->
+              <tr>
+                <th scope="row" class="sticky-col">13:00–14:30</th>
+                <td class="slot" data-class="Open mat / personal practice">Open mat / personal practice</td>
+                <td class="slot" data-class="Open mat / personal practice">Open mat / personal practice</td>
+                <td class="slot" data-class="Open mat / personal practice">Open mat / personal practice</td>
+                <td class="slot" data-class="Open mat / personal practice">Open mat / personal practice</td>
+                <td class="slot" data-class="Open mat / personal practice">Open mat / personal practice</td>
+                <td class="slot" data-class="Karate">Karate</td>
+                <td class="slot" data-class="Judo">Judo</td>
+              </tr>
+
+              <!-- 15:00–17:00 -->
+              <tr>
+                <th scope="row" class="sticky-col">15:00–17:00</th>
+                <td class="slot" data-class="Kids">Kids jiu-jitsu</td>
+                <td class="slot" data-class="Kids">Kids judo</td>
+                <td class="slot" data-class="Kids">Kids karate</td>
+                <td class="slot" data-class="Kids">Kids jiu-jitsu</td>
+                <td class="slot" data-class="Kids">Kids judo</td>
+                <td class="slot" data-class="Muay Thai">Muay Thai</td>
+                <td class="slot" data-class="Jiu-jitsu">Jiu-jitsu</td>
+              </tr>
+
+              <!-- 17:30–19:00 -->
+              <tr>
+                <th scope="row" class="sticky-col">17:30–19:00</th>
+                <td class="slot" data-class="Karate">Karate</td>
+                <td class="slot" data-class="Muay Thai">Muay Thai</td>
+                <td class="slot" data-class="Judo">Judo</td>
+                <td class="slot" data-class="Jiu-jitsu">Jiu-jitsu</td>
+                <td class="slot" data-class="Muay Thai">Muay Thai</td>
+                <td class="slot is-empty" data-class="Empty">—</td>
+                <td class="slot is-empty" data-class="Empty">—</td>
+              </tr>
+
+              <!-- 19:00–21:00 -->
+              <tr>
+                <th scope="row" class="sticky-col">19:00–21:00</th>
+                <td class="slot" data-class="Jiu-jitsu">Jiu-jitsu</td>
+                <td class="slot" data-class="Judo">Judo</td>
+                <td class="slot" data-class="Jiu-jitsu">Jiu-jitsu</td>
+                <td class="slot" data-class="Karate">Karate</td>
+                <td class="slot" data-class="Private tuition">Private tuition</td>
+                <td class="slot is-empty" data-class="Empty">—</td>
+                <td class="slot is-empty" data-class="Empty">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p id="timetableNote" class="note">
+          Want private tuition? Please contact us to book your hourly sessions. (Private tuition pricing is shown in Memberships.)
+        </p>
+      </section>
+    </div>
+  </main>
+  <!-- ================= END MAIN ================= -->
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-title">Martial Arts Academy</h3>
+        <p class="footer-text">
+          This website helps members explore classes, timetables, and membership plans easily.
+        </p>
+        <p class="footer-text">Discipline • Confidence • Fitness</p>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <a href="classes.html" class="footer-link">Classes</a><br />
+        <a href="timetable.html" class="footer-link">Timetable</a><br />
+        <a href="memberships.html" class="footer-link">Memberships</a><br />
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Reviews</h4>
+        <p class="footer-text">⭐ 4.8 / 5 average rating</p>
+        <a href="review.html" class="footer-link">Read Reviews</a><br />
+        <a href="review.html#leave-review" class="footer-link">Leave a Review</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-text">© 2026 Martial Arts Academy. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- ================= END FOOTER ================= -->
+
+  <script src="script.js"></script>
+</body>
+</html>
